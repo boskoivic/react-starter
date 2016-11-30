@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-import { Link, IndexLink } from 'react-router'
+import { IndexLink } from 'react-router'
 import NavLinks from './NavLinks';
 
 
@@ -9,7 +9,7 @@ class Nav extends Component {
     
     return (
      <div className="App">     
-      <ul role="nav">
+      <ul className="navigation" role="nav">
         <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
         <li><NavLinks to="/background"> Background</NavLinks></li>
         <li><NavLinks to="/repos/reactjs/react-router">React Router</NavLinks></li>
